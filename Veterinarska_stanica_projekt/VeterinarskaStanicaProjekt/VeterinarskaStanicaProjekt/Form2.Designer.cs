@@ -37,17 +37,20 @@
             this.ispisLjubimacaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preglediToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unosPregledaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.računiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ispisRačunaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomočToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.f1FAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView_pregledi = new System.Windows.Forms.DataGridView();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonPregled = new System.Windows.Forms.Button();
             this.buttonObrisi = new System.Windows.Forms.Button();
-            this.pomočToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.f1FAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.helpProvider2 = new System.Windows.Forms.HelpProvider();
-            this.računiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ispisRačunaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uslugeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodajUsluguToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pregledUslugaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_pregledi)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +62,7 @@
             this.ljubimciToolStripMenuItem,
             this.preglediToolStripMenuItem,
             this.računiToolStripMenuItem,
+            this.uslugeToolStripMenuItem,
             this.pomočToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -127,6 +131,35 @@
             this.unosPregledaToolStripMenuItem.Text = "Unos pregleda";
             this.unosPregledaToolStripMenuItem.Click += new System.EventHandler(this.unosPregledaToolStripMenuItem_Click);
             // 
+            // računiToolStripMenuItem
+            // 
+            this.računiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ispisRačunaToolStripMenuItem});
+            this.računiToolStripMenuItem.Name = "računiToolStripMenuItem";
+            this.računiToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.računiToolStripMenuItem.Text = "Računi";
+            // 
+            // ispisRačunaToolStripMenuItem
+            // 
+            this.ispisRačunaToolStripMenuItem.Name = "ispisRačunaToolStripMenuItem";
+            this.ispisRačunaToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.ispisRačunaToolStripMenuItem.Text = "Ispis računa";
+            this.ispisRačunaToolStripMenuItem.Click += new System.EventHandler(this.ispisRačunaToolStripMenuItem_Click);
+            // 
+            // pomočToolStripMenuItem
+            // 
+            this.pomočToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.f1FAQToolStripMenuItem});
+            this.pomočToolStripMenuItem.Name = "pomočToolStripMenuItem";
+            this.pomočToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.pomočToolStripMenuItem.Text = "Pomoć";
+            // 
+            // f1FAQToolStripMenuItem
+            // 
+            this.f1FAQToolStripMenuItem.Name = "f1FAQToolStripMenuItem";
+            this.f1FAQToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.f1FAQToolStripMenuItem.Text = "F1 FAQ";
+            // 
             // dataGridView_pregledi
             // 
             this.dataGridView_pregledi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -171,39 +204,33 @@
             this.buttonObrisi.UseVisualStyleBackColor = true;
             this.buttonObrisi.Click += new System.EventHandler(this.buttonObrisi_Click);
             // 
-            // pomočToolStripMenuItem
-            // 
-            this.pomočToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.f1FAQToolStripMenuItem});
-            this.pomočToolStripMenuItem.Name = "pomočToolStripMenuItem";
-            this.pomočToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.pomočToolStripMenuItem.Text = "Pomoć";
-            // 
-            // f1FAQToolStripMenuItem
-            // 
-            this.f1FAQToolStripMenuItem.Name = "f1FAQToolStripMenuItem";
-            this.f1FAQToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.f1FAQToolStripMenuItem.Text = "F1 FAQ";
-            // 
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "C:\\Users\\dadi\\Desktop\\Veterinarska_stanica_projekt\\VeterinarskaStanicaProjekt\\Vet" +
     "erinarskaStanicaProjekt\\bin\\Debug\\veterinarskaStanicaFAQ.html";
             // 
-            // računiToolStripMenuItem
+            // uslugeToolStripMenuItem
             // 
-            this.računiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ispisRačunaToolStripMenuItem});
-            this.računiToolStripMenuItem.Name = "računiToolStripMenuItem";
-            this.računiToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.računiToolStripMenuItem.Text = "Računi";
+            this.uslugeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dodajUsluguToolStripMenuItem,
+            this.pregledUslugaToolStripMenuItem});
+            this.uslugeToolStripMenuItem.Name = "uslugeToolStripMenuItem";
+            this.uslugeToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.uslugeToolStripMenuItem.Text = "Usluge";
             // 
-            // ispisRačunaToolStripMenuItem
+            // dodajUsluguToolStripMenuItem
             // 
-            this.ispisRačunaToolStripMenuItem.Name = "ispisRačunaToolStripMenuItem";
-            this.ispisRačunaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ispisRačunaToolStripMenuItem.Text = "Ispis računa";
-            this.ispisRačunaToolStripMenuItem.Click += new System.EventHandler(this.ispisRačunaToolStripMenuItem_Click);
+            this.dodajUsluguToolStripMenuItem.Name = "dodajUsluguToolStripMenuItem";
+            this.dodajUsluguToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dodajUsluguToolStripMenuItem.Text = "Dodaj uslugu";
+            this.dodajUsluguToolStripMenuItem.Click += new System.EventHandler(this.dodajUsluguToolStripMenuItem_Click);
+            // 
+            // pregledUslugaToolStripMenuItem
+            // 
+            this.pregledUslugaToolStripMenuItem.Name = "pregledUslugaToolStripMenuItem";
+            this.pregledUslugaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pregledUslugaToolStripMenuItem.Text = "Pregled usluga";
+            this.pregledUslugaToolStripMenuItem.Click += new System.EventHandler(this.pregledUslugaToolStripMenuItem_Click);
             // 
             // FormaAdmin
             // 
@@ -250,5 +277,8 @@
         private System.Windows.Forms.HelpProvider helpProvider2;
         private System.Windows.Forms.ToolStripMenuItem računiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ispisRačunaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uslugeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dodajUsluguToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pregledUslugaToolStripMenuItem;
     }
 }

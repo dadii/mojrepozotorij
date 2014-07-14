@@ -58,14 +58,16 @@ namespace VeterinarskaStanicaProjekt
                         int serial = Convert.ToInt32(serBr);
                         
                         FormaKorisnik novaFormaKorisnik = new FormaKorisnik(serial);
+                        this.Hide();
                         novaFormaKorisnik.Show();
-                        this.Hide();       
+                              
                     }
                     else
                     {
                         FormaAdmin novaFormaAdmin = new FormaAdmin();
-                        novaFormaAdmin.Show();
                         this.Hide();
+                        novaFormaAdmin.Show();
+                        
                     }
                 }
                 else
@@ -79,7 +81,7 @@ namespace VeterinarskaStanicaProjekt
             {
                 MessageBox.Show(ex.Message);
             }
-            sql_con.Close();
+            sql_con.Close();            
 
         }
     }

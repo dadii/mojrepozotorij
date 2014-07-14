@@ -120,6 +120,18 @@ namespace VeterinarskaStanicaProjekt
             FormaIspisRacuna noviIspisRacuna = new FormaIspisRacuna();
             noviIspisRacuna.Show();
         }
+
+        private void dodajUsluguToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formDodajUslugu novaUsluga = new formDodajUslugu();
+            novaUsluga.Show();
+        }
+
+        private void pregledUslugaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormazaPregledUsluga pregledUsluga = new FormazaPregledUsluga();
+            pregledUsluga.Show();
+        }
      
     }
 }
